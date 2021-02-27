@@ -1,0 +1,149 @@
+/*CSS reset start*/
+html, body, main, section, h1,h2,h3,h4,div,a,ul,li, p, button {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    text-align: inherit;
+    text-decoration: inherit;
+    color: inherit;
+    background: transparent;
+    list-style: none;
+}
+/*CSS reset end*/
+
+header {
+    padding: 10px 10px;
+    background: rgba(0,0,0,0.5);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    position: fixed;
+    width: 100%;
+    z-index: 1; /*to escape the dark overlay*/
+}
+header .logo {
+    display: flex;
+    align-items: center;
+}
+header .logo a {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 1.5rem;
+}
+header nav {
+    margin: auto;
+}
+header nav ul{
+    display: flex;
+}
+header nav ul a {
+    padding: 10px;
+    font-size: 1rem;
+    display: inline-block;
+}
+.banner {
+    width: 100%;
+    height: 100vh;
+    background: url(https://www.onholdinc.com/mohblog/wp-content/uploads/2018/03/restaurant.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    display: grid;
+    place-items: center;
+}
+.banner::before {   /*produces dark overlay*/
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.banner .content {
+    z-index: 1;
+    width: 45%;
+    place-items: center;
+    display: grid;
+}
+.banner .title {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 3rem;
+}
+.banner .text {
+    text-align: center;
+    font-size: 1.1rem;
+}
+.banner button {
+    margin-top: 10px;
+    border: solid #ffb03b 3px;
+    border-radius: 2rem;
+    padding: 10px 30px;
+    font-weight: bold;
+}
+.banner button:hover {
+    cursor: pointer;
+}
+.banner button a {
+    display: block;
+    padding: 10px 30px;
+}
+
+.banner .menu {
+    z-index: 1;
+    width: 40%;
+}
+.banner.menu .food {
+    width: 100%;
+}
+.banner .menu .head {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 1.5rem;
+    color: #ffb03b;
+    padding: 5px 0;
+}
+.banner .menu li {
+    display: flex;
+    margin-bottom: 15px;
+}
+.banner .menu li::before {
+        content: '';
+        display: block;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 250px;
+        height: 100px;
+        margin: 8px;
+}
+.banner .menu li:nth-child(1)::before {
+    background-image: url(https://timber.mhmcdn.com/public/member/950931/bbqfoodtruck1-m5ZV1G-c2EWv1BIfuy8.jpg);
+}
+.banner .menu li:nth-child(2)::before {
+    background-image: url(https://timber.mhmcdn.com/public/member/950931/bbqfoodtruck2-cljgUL-L6B3ddjigLzC.jpg);
+}
+.banner .menu li:nth-child(3)::before {
+    background-image: url(https://timber.mhmcdn.com/public/member/950931/bbqfoodtruck3-ynftZu-LQQH5GaXfQYq.jpg);
+}
+.banner .menu li:nth-child(4)::before {
+    background-image: url(https://timber.mhmcdn.com/public/member/950931/bbqfoodtruck4-Rn1whF-tOlmg4rjE3Dt.png);
+}
+
+.about {
+    z-index: 1;
+    text-align: center;
+}
+
+.about h2 {
+    color: #ffb03b;
+    font-size: 2rem;
+    font-family: 'Kaushan Script', cursive;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 1.2rem;
+}
