@@ -102,3 +102,9 @@ dist
 
 # TernJS port file
 .tern-port
+
+#stylelintrc linter
+.stylelintrc.json
+
+#eslint js linter
+.eslintrc.json
