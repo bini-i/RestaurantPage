@@ -1,7 +1,9 @@
-const domNodeCreator = (htmlTag, options = {})=>{
+const domNodeCreator = (htmlTag, options = {}, text = '')=>{
     let node = document.createElement(htmlTag);
-    if(options.class)node.setAttribute('class', options.class);
-    if(options.text)node.textContent = options.text;
+    for (const key in options){
+        node.setAttribute(key, options[key])
+    }
+    node.textContent = text;
     return node;
 }
 

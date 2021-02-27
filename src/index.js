@@ -1,5 +1,7 @@
-import renderHome from './home.js';
+import renderHeader from "./header";
+import renderBanner from './banner';
+import renderMenu from './menu'
 
-renderHome();
-
-console.log("working");
+renderHeader();
+// renderBanner();
+// renderMenu();
