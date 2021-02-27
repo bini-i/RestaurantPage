@@ -1,5 +1,5 @@
 import { domNodeCreator, chainAppend } from './domNodeCreator';
-import renderMenu from "./menu";
+import renderMenu from './menu';
 
 export default () => {
   // renders banner section ▼
@@ -11,15 +11,15 @@ export default () => {
     { class: 'text' },
     'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere, commodi pariatur eaque recusandae deserunt nesciunt illo provident nemo alias, saepe natus omnis! Eligendi molestiae nesciunt possimus veritatis in maxime beatae.');
   const bannerButton = domNodeCreator('button', {}, 'Our Menu');
-  
-  function Menu(){
+
+  function Menu() {
     const banner = document.querySelector('.banner');
     content.removeChild(banner);
     renderMenu();
   }
 
-  bannerButton.addEventListener('click', Menu)
-  
+  bannerButton.addEventListener('click', Menu);
+
   bannerContent.appendChild(bannerTitle);
   bannerContent.appendChild(bannerText);
   chainAppend([bannerContent, bannerButton]);

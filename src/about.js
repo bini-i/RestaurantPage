@@ -1,4 +1,4 @@
-import { domNodeCreator, chainAppend } from './domNodeCreator';
+import { domNodeCreator } from './domNodeCreator';
 
 export default () => {
   // renders about section ▼
