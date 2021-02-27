@@ -10,7 +10,7 @@ export default () => {
     const ul = domNodeCreator('ul');
     ["Home", "Menu", "About"].forEach((item)=>{
         let li = domNodeCreator('li');
-        let anchor = domNodeCreator('a', {'href': '#'}, item);
+        let anchor = domNodeCreator('a', {'href': '#', 'class': item}, item);
         chainAppend([ul, li, anchor]);
     });
     chainAppend([header, logo, anchor]);
