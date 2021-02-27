@@ -1,22 +1,11 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Wildstyle articles
-![Screenshot](./app/assets/images/screenshot.png)
-![Screenshot](./app/assets/images/screenshot2.png)
+# Restaurant pages
+![Screenshot](./dist/assets/img/screenshot.png)
 
 ## About the Project
 
-This project is a rails app where articles with a theme of wild animals and wildlife are grouped under different categories and an authenticated user has an option to create, view, edit and delete articles:
-
-As a guest user:
-- Create an account/log in
-- See Home page and category page 
-
-As a logged-in user:
-- Create articles.
-- Upvote articles.
-
-A list of commonly used resources that I find helpful is listed in the acknowledgements.
+This project uses Javascript to render all the elements of the page and responsibilities of rendering the different sections of the page are organized in separate module. Webpack is used to bundle the different modules in to main.js file under dist folder.
 
 
 ## Table of Contents
@@ -24,7 +13,6 @@ A list of commonly used resources that I find helpful is listed in the acknowled
 * [About the Project](#about-the-project)
 * [Built With](#built-with)
 * [Live Demo](#live-demo)
-* [Getting Started](#getting-started)
 * [Authors](#authors)
 * [Contributing](#contributing)
 * [Show your support](#show-your-support)
@@ -33,17 +21,13 @@ A list of commonly used resources that I find helpful is listed in the acknowled
 
 ## Built With
 
-* [Ruby on Rails](https://rubyonrails.org/)
-* [Ruby](https://www.ruby-lang.org/en/)
-* [HTML5](https://en.wikipedia.org/wiki/HTML5)
-* [SASS(SCSS)](https://sass-lang.com/)
-* [Bootstrap](https://getbootstrap.com/)
 * [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
-
+* [HTML5](https://en.wikipedia.org/wiki/HTML5)
+* CSS
 
 ## Live Demo
 
-[Live Demo Link](https://wild-style.herokuapp.com/)
+[Live Demo Link](https://www.binyamhailemeskel.me/RestaurantPage/)
 
 
 ## Authors
