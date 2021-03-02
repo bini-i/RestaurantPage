@@ -14,7 +14,7 @@ html, body, main, section, h1,h2,h3,h4,div,a,ul,li, p, button {
 
 header {
     padding: 10px 10px;
-    background: rgba(0,0,0,0.5);
+    background: rgba(0,0,0,0.75);
     color: white;
     font-family: 'Poppins', sans-serif;
     display: flex;
